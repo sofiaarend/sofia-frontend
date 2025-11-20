@@ -1,9 +1,11 @@
-import { relative } from 'path';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const { relative } = require('path');
 
 const buildEslintCommand = (filenames) =>
-  `eslint --fix ${filenames.map((f) => `"${relative(process.cwd(), f)}"`).join(' ')}`;
+  `eslint --fix --max-warnings 0 ${filenames
+    .map((f) => `"${relative(process.cwd(), f)}"`)
+    .join(' ')}`;
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+module.exports = {
   '*.{js,jsx,ts,tsx}': [buildEslintCommand],
 };
