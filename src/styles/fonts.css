@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/assets/fonts/commissioner/Commissioner-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/src/assets/fonts/commissioner/Commissioner-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: 600;
+  src: url('/src/assets/fonts/commissioner/Commissioner-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/src/assets/fonts/commissioner/Commissioner-Bold.woff2') format('woff2');
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+}
