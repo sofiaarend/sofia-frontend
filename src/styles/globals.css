@@ -2,20 +2,29 @@
 @import './fonts.css';
 
 :root {
-  --background: #fff;
-  --foreground: #171717;
+  --primary: var(--color-pink-500);
+  --secondary: var(--color-indigo-500);
+  --background: var(--color-slate-50);
+  --primary-text: var(--color-slate-900);
+  --secondary-text: var(--color-slate-700);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: var(--color-pink-400);
+    --secondary: var(--color-indigo-300);
+    --background: var(--color-slate-950);
+    --primary-text: var(--color-slate-100);
+    --secondary-text: var(--color-slate-400);
   }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-bg: var(--background);
+  --color-fg: var(--primary-text);
+  --color-fg-muted: var(--secondary-text);
 }
 
 body {

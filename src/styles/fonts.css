@@ -26,8 +26,24 @@
   src: url('/src/assets/fonts/commissioner/Commissioner-Bold.woff2') format('woff2');
 }
 
-h1,
-h2,
-h3 {
-  letter-spacing: -0.01em;
+@layer base {
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.01em;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }
