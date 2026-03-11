@@ -10,6 +10,7 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
+    "noImplicitAny": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -25,7 +26,10 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": [
-        "public/components/*"
+        "src/components/*"
+      ],
+      "@messages/*": [
+        "src/messages/*"
       ],
       "@features/*": [
         "src/features/*"

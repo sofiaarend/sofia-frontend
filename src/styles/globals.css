@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@import './fonts.css';
 
 :root {
   --primary: var(--color-pink-500);
@@ -7,6 +6,7 @@
   --background: var(--color-slate-50);
   --primary-text: var(--color-slate-900);
   --secondary-text: var(--color-slate-700);
+  --dropdown-hover-text: var(--color-white);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +16,7 @@
     --background: var(--color-slate-950);
     --primary-text: var(--color-slate-100);
     --secondary-text: var(--color-slate-400);
+    --dropdown-hover-text: var(--color-slate-900);
   }
 }
 
@@ -25,10 +26,10 @@
   --color-bg: var(--background);
   --color-fg: var(--primary-text);
   --color-fg-muted: var(--secondary-text);
+  --color-dropdown-hover: var(--dropdown-hover-text);
 }
 
 body {
-  font-family: Commissioner, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.01em;
   font-size: 16px;
