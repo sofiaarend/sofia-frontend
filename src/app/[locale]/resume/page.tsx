@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Resume() {
   return (
     <div className="bg-bg flex min-h-screen justify-center">
       <main className="my-2 flex flex-col justify-center">
