@@ -40,11 +40,11 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body className={commissioner.className}>
+    <html lang={locale} className="h-full">
+      <body className={`${commissioner.className} bg-background flex h-full flex-col`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavBar />
-          {children}
+          <main className="flex-1 overflow-y-auto">{children}</main>
         </NextIntlClientProvider>
       </body>
     </html>

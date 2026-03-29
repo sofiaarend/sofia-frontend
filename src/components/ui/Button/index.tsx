@@ -2,11 +2,12 @@ import { cva } from 'class-variance-authority';
 import type { ButtonProps } from './Button.types';
 
 export const buttonVariants = cva(
-  'flex items-center justify-center rounded font-medium transition-colors',
+  'flex items-center justify-center rounded-full font-medium transition-colors',
   {
     variants: {
       variant: {
-        primary: 'bg-primary text-slate-900 border-primary border-2 hover:border-slate-900',
+        primary:
+          'bg-primary text-on-primary border-primary border-2 hover:bg-hover hover:text-on-hover active:bg-pressed disabled:bg-disabled disabled:text-on-disabled',
       },
       size: {
         sm: 'px-3 py-1 text-sm',

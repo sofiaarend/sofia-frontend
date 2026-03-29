@@ -1,32 +1,154 @@
 @import 'tailwindcss';
 
 :root {
-  --primary: var(--color-pink-500);
+  /* Primary */
+  --primary: var(--color-pink-400);
+  --on-primary: var(--color-slate-900);
+  --primary-container: var(--color-pink-100);
+  --on-primary-container: var(--color-pink-900);
+
+  /* Secondary */
   --secondary: var(--color-indigo-500);
-  --background: var(--color-slate-50);
-  --primary-text: var(--color-slate-900);
-  --secondary-text: var(--color-slate-700);
-  --dropdown-hover-text: var(--color-white);
+  --on-secondary: var(--color-slate-50);
+  --secondary-container: var(--color-indigo-100);
+  --on-secondary-container: var(--color-indigo-800);
+
+  /* Background */
+  --background: var(--color-pink-100);
+  --on-background: var(--color-slate-900);
+
+  /* Surface layers (cards, sheets, modals) */
+  --surface: var(--color-white);
+  --on-surface: var(--color-slate-900);
+  --surface-variant: var(--color-pink-50);
+  --on-surface-variant: var(--color-slate-700);
+
+  /* Outline / borders */
+  --outline: var(--color-slate-300); /* borders, dividers */
+  --outline-variant: var(--color-slate-200);
+
+  /* Interactive states */
+  --focus-ring: var(--color-pink-400);
+  --hover: var(--color-pink-200);
+  --on-hover: var(--color-pink-900);
+  --pressed: var(--color-pink-300);
+  --hover-neutral: var(--color-slate-100);
+  --pressed-neutral: var(--color-slate-200);
+
+  /* Semantic / status */
+  --error: var(--color-red-600);
+  --on-error: var(--color-white);
+  --error-container: var(--color-red-100);
+  --on-error-container: var(--color-red-900);
+
+  --success: var(--color-emerald-600);
+  --warning: var(--color-amber-500);
+  --info: var(--color-sky-500);
+
+  /* Disabled states */
+  --disabled: var(--color-slate-300);
+  --on-disabled: var(--color-slate-500);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: var(--color-pink-400);
+    /* Primary */
+    --primary: var(--color-pink-300);
+    --on-primary: var(--color-pink-950);
+    --primary-container: var(--color-pink-800);
+    --on-primary-container: var(--color-pink-100);
+
+    /* Secondary */
     --secondary: var(--color-indigo-300);
+    --on-secondary: var(--color-slate-900);
+    --secondary-container: var(--color-indigo-800);
+    --on-secondary-container: var(--color-indigo-100);
+
+    /* Background */
     --background: var(--color-slate-950);
-    --primary-text: var(--color-slate-100);
-    --secondary-text: var(--color-slate-400);
-    --dropdown-hover-text: var(--color-slate-900);
+    --on-background: var(--color-slate-100);
+
+    /* Surface layers (cards, sheets, modals) */
+    --surface: var(--color-slate-900);
+    --on-surface: var(--color-slate-100);
+    --surface-variant: var(--color-slate-800);
+    --on-surface-variant: var(--color-slate-300);
+
+    /* Outline / borders */
+    --outline: var(--color-slate-600);
+    --outline-variant: var(--color-slate-700);
+
+    /* Interactive states */
+    --focus-ring: var(--color-pink-300);
+    --hover: var(--color-pink-900);
+    --on-hover: var(--color-pink-100);
+    --pressed: var(--color-pink-800);
+    --hover-neutral: var(--color-slate-800);
+    --pressed-neutral: var(--color-slate-700);
+
+    /* Semantic / status */
+    --error: var(--color-red-400);
+    --on-error: var(--color-red-950);
+    --error-container: var(--color-red-900);
+    --on-error-container: var(--color-red-100);
+
+    --success: var(--color-emerald-400);
+    --warning: var(--color-amber-400);
+    --info: var(--color-sky-400);
+
+    /* Disabled states */
+    --disabled: var(--color-slate-700);
+    --on-disabled: var(--color-slate-500);
   }
 }
 
 @theme inline {
+  /* Primary */
   --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+
+  /* Secondary */
   --color-secondary: var(--secondary);
-  --color-bg: var(--background);
-  --color-fg: var(--primary-text);
-  --color-fg-muted: var(--secondary-text);
-  --color-dropdown-hover: var(--dropdown-hover-text);
+  --color-on-secondary: var(--on-secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+
+  /* Background */
+  --color-background: var(--background);
+  --color-on-background: var(--on-background);
+
+  /* Surface */
+  --color-surface: var(--surface);
+  --color-on-surface: var(--on-surface);
+  --color-surface-variant: var(--surface-variant);
+  --color-on-surface-variant: var(--on-surface-variant);
+
+  /* Outline */
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+
+  /* Focus */
+  --color-focus-ring: var(--focus-ring);
+  --color-hover: var(--hover);
+  --color-on-hover: var(--on-hover);
+  --color-pressed: var(--pressed);
+  --color-hover-neutral: var(--hover-neutral);
+  --color-pressed-neutral: var(--pressed-neutral);
+
+  /* Status */
+  --color-error: var(--error);
+  --color-on-error: var(--on-error);
+  --color-error-container: var(--error-container);
+  --color-on-error-container: var(--on-error-container);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+
+  /* Disabled */
+  --color-disabled: var(--disabled);
+  --color-on-disabled: var(--on-disabled);
 }
 
 body {

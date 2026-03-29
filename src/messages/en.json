@@ -1,9 +1,15 @@
 {
   "title": "Sofia Arend",
   "description": "Sofia Arend's website",
+  "welcome": "Welcome to my personal website!",
+  "subtitle": "I'm a software engineer specializing in frontend development, with a passion for creating beautiful and performant web applications. Feel free to explore and learn more about me and my work.",
   "home": "Home",
   "resume": {
     "title": "Resume",
     "description": "Sofia Arend's resume"
+  },
+  "external": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
   }
 }

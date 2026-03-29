@@ -10,8 +10,8 @@ export default function DropdownItem({
   return (
     <button
       role="menuitem"
-      className={`text-md hover:bg-secondary hover:text-dropdown-hover block w-full px-4 py-2 text-left text-slate-900 ${
-        isSelected ? 'bg-primary' : ''
+      className={`text-md hover:bg-secondary hover:text-on-secondary text-on-background block w-full px-4 py-2 text-left ${
+        isSelected ? 'bg-pressed' : ''
       }`}
       onClick={onClick}
     >

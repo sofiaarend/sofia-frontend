@@ -12,10 +12,8 @@ export async function generateMetadata({
 
 export default function Resume() {
   return (
-    <div className="bg-bg flex min-h-screen justify-center">
-      <main className="my-2 flex flex-col justify-center">
-        <h1 className="text-primary mt-10 text-6xl">Curriculo</h1>
-      </main>
+    <div className="my-2 flex flex-col justify-center">
+      <h1 className="text-on-background mt-10 text-6xl">Curriculo</h1>
     </div>
   );
 }

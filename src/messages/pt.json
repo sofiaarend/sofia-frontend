@@ -1,9 +1,15 @@
 {
   "title": "Sofia Arend",
   "description": "Website de Sofia Arend",
+  "welcome": "Bem-vindo ao meu site pessoal!",
+  "subtitle": "Sou uma engenheira de software especializada em desenvolvimento frontend, com paixão por criar aplicações web bonitas e de alto desempenho. Sinta-se à vontade para explorar e aprender mais sobre mim e meu trabalho.",
   "home": "Início",
   "resume": {
     "title": "Currículo",
     "description": "Currículo de Sofia Arend"
+  },
+  "external": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
   }
 }
